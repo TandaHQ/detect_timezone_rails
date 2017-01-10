@@ -11,6 +11,7 @@
   $.TZ_MAPPING = <%= ActiveSupport::TimeZone::MAPPING.to_json %>;
 
   $.fn.set_timezone_from_name = function(tz) {
+      var thisobj = this;
       $.each($.TZ_MAPPING, function(key, value){
         if(value == tz)
         {
@@ -25,8 +26,6 @@
   $.fn.set_timezone = function(options) {
 
       var tz = this.get_timezone(options);
-      var thisobj = this;
-
       return this.set_timezone_from_name(tz);
   };
 
