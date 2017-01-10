@@ -8,14 +8,10 @@
 
 (function( $ ){
 
-  var MAPPING = <%= ActiveSupport::TimeZone::MAPPING.to_json %>;
+  $.TZ_MAPPING = <%= ActiveSupport::TimeZone::MAPPING.to_json %>;
 
-  $.fn.set_timezone = function(options) {
-
-      var tz = this.get_timezone(options);
-      var thisobj = this;
-
-      $.each(MAPPING, function(key, value){
+  $.fn.set_timezone_from_name = function(tz) {
+      $.each($.TZ_MAPPING, function(key, value){
         if(value == tz)
         {
           thisobj.val(key);
@@ -24,6 +20,14 @@
       });
 
       return this;
+  };
+
+  $.fn.set_timezone = function(options) {
+
+      var tz = this.get_timezone(options);
+      var thisobj = this;
+
+      return this.set_timezone_from_name(tz);
   };
 
   $.fn.get_timezone = function(options) {
