@@ -304,13 +304,9 @@ jstz.olson.dst_start_dates = {
 jstz.olson.ambiguity_list = {
     'America/Denver' : ['America/Denver', 'America/Mazatlan'],
     'America/Chicago' : ['America/Chicago', 'America/Mexico_City'],
-    'America/Asuncion' : ['Atlantic/Stanley', 'America/Asuncion', 'America/Santiago', 'America/Campo_Grande'],
+    'America/Asuncion' : ['America/Asuncion', 'America/Santiago'],
     'America/Montevideo' : ['America/Montevideo', 'America/Sao_Paulo'],
-    'Asia/Beirut' : ['Asia/Gaza', 'Asia/Beirut', 'Europe/Minsk', 'Europe/Istanbul', 'Asia/Damascus', 'Asia/Jerusalem', 'Africa/Cairo'],
+    'Asia/Beirut' : ['Asia/Beirut', 'Europe/Minsk', 'Europe/Istanbul', 'Asia/Jerusalem', 'Africa/Cairo'],
     'Asia/Yerevan' : ['Asia/Yerevan', 'Asia/Baku'],
-    'Pacific/Auckland' : ['Pacific/Auckland', 'Pacific/Fiji'],
-    'America/Los_Angeles' : ['America/Los_Angeles', 'America/Santa_Isabel'],
-    'America/New_York' : ['America/Havana', 'America/New_York'],
-    'America/Halifax' : ['America/Goose_Bay', 'America/Halifax'],
-    'America/Godthab' : ['America/Miquelon', 'America/Godthab']
+    'Pacific/Auckland' : ['Pacific/Auckland', 'Pacific/Fiji']
 };
